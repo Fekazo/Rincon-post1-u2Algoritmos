@@ -4,10 +4,10 @@ Cálculo de razones experimentales
 A partir de los datos medidos (tiempos promedio en µs), se calculó la razón ( T(2n) / T(n) ) para valores consecutivos de ( n ).
 •	Insertion Sort
 n	     T(n)(µs)	   T(2n)(µs)	  Razón
-500	   13.311	     47.218       3.55
-1000	 47.218	     176.054	    3.73
-2000	 176.054	   713.878	    4.05
-4000	 713.878	   2671.891	    3.74
+500	     13.311	       47.218         3.55
+1000	 47.218	       176.054	      3.73
+2000	 176.054	   713.878	      4.05
+4000	 713.878	   2671.891	      3.74
 8000	 2671.891	   11297.634	  4.23
 Análisis:
 Las razones obtenidas oscilan alrededor de 4, con un promedio aproximado de 3.9–4.0.
@@ -18,11 +18,11 @@ Las pequeñas variaciones observadas se deben a factores experimentales como efe
 
 •	Merge Sort
 n	     T(n)(µs)	   T(2n)(µs)	 Razón
-500	   10.660	     24.530	     2.30
-1000	 24.530	     65.794	     2.68
-2000	 65.794	     213.001	   3.24
-4000	 213.001	   467.047	   2.19
-8000	 467.047	   1048.898	   2.24
+500	     10.660	       24.530	     2.30
+1000	 24.530	       65.794	     2.68
+2000	 65.794        213.001	     3.24
+4000	 213.001	   467.047	     2.19
+8000	 467.047	   1048.898	     2.24
 
 Análisis:
 La razón se estabiliza en torno a 2.2 para valores grandes de ( n ).
@@ -36,12 +36,12 @@ En general, el comportamiento converge hacia 2 conforme aumenta ( n ), validando
 MergeSort=O(nlogn)
 
 •	Heap Sort
-n	    T(n)(µs)	  T(2n)(µs)	 Razón
-500	  6.624	      14.749	   2.23
-1000	14.749	    67.372	   4.57
-2000	67.372	    172.036	   2.55
-4000	172.036	    400.683	   2.33
-8000	400.683	    874.984	   2.18
+n	    T(n)(µs)	  T(2n)(µs)	   Razón
+500	    6.624	      14.749	   2.23
+1000	14.749	      67.372	   4.57
+2000	67.372	      172.036	   2.55
+4000	172.036	      400.683	   2.33
+8000	400.683	      874.984	   2.18
 
 Análisis:
 Exceptuando el valor atípico en el intervalo 1000 → 2000, las razones se sitúan entre 2.1 y 2.5, mostrando convergencia hacia 2.
